@@ -9,7 +9,7 @@
 //     i ← i + 1
 // end while
 
-const insertionSort = arr => {
+function insertionSort(arr) {
   let i = 1;
   while (i < arr.length) {
     let j = i;
