@@ -28,4 +28,6 @@ function palindromePermutation(str) {
   return true;
 }
 
+// TODO: Implement solution #3 in the book, which uses bit vectors.
+
 module.exports = palindromePermutation;
