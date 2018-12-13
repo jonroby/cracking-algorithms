@@ -33,6 +33,7 @@ function stringCompression(str) {
 
 // Lessons
 // - Consider both checking ahead (str[i] and str[i+1]) as well as
-//   (str[i] and str[i+1])
+//   checking behind (str[i] and str[i-1]). Especially if you find
+//   one is leading to cumbersome code.
 
 module.exports = stringCompression;
