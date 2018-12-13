@@ -58,4 +58,9 @@ function urlify(strArr, len) {
   return strArr;
 }
 
+// Lessons
+// - Comfort with starting your iterator in some index other than the ends
+// - Accessing items in the array using some other variable that changes as you
+//   iterate (numOfSpaces)
+
 module.exports = urlify;

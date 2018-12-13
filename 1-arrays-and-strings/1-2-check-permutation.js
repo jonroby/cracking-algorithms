@@ -24,3 +24,6 @@ function checkPermutation(str1, str2) {
 }
 
 module.exports = checkPermutation;
+
+// Lessons
+// - Don't try to list all permutations. This takes time factorial.
