@@ -22,6 +22,7 @@ class LinkedList {
     } else {
       this._head = end;
     }
+    this._length += 1;
   }
 
   deleteNode(v) {
@@ -38,6 +39,7 @@ class LinkedList {
       }
       n = n._next;
     }
+    this._length -= 1;
     return this._head;
   }
 }
