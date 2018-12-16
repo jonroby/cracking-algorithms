@@ -42,6 +42,16 @@ class LinkedList {
     this._length -= 1;
     return this._head;
   }
+
+  getNode(idx) {
+    let n = this._head;
+    let count = 0;
+    while (n._next !== null && count < idx) {
+      n = n._next;
+      count += 1;
+    }
+    return n;
+  }
 }
 
 module.exports = LinkedList;
