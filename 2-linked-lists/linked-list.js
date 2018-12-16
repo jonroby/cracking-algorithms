@@ -43,6 +43,25 @@ class LinkedList {
     return this._head;
   }
 
+  deleteAtIdx(i) {
+    if (i === 0) {
+      this._head = this._head._next;
+      return;
+    }
+
+    let count = 1;
+    let n = this._head._next;
+    let prev = this._head;
+    while (count < i && n._next !== null) {
+      prev = n;
+      n = n._next;
+      count += 1;
+    }
+
+    prev._next = n._next;
+    this._length -= 1;
+  }
+
   getNode(idx) {
     let n = this._head;
     let count = 0;
