@@ -1,6 +1,3 @@
-// Implement a stack (push, pop, peek)
-// All operations have O(1)
-
 class Stack {
   constructor() {
     this._storage = {};
