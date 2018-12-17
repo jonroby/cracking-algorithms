@@ -66,7 +66,7 @@ class LinkedList {
   getNode(idx) {
     let n = this._head;
     let count = 0;
-    while (n._next !== null && count < idx) {
+    while (n !== null && count < idx) {
       n = n._next;
       count += 1;
     }
