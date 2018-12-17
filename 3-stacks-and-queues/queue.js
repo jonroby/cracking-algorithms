@@ -17,7 +17,7 @@ class Queue {
   }
 
   peek() {
-    return this._storage.getNode(0)._val;
+    return this._storage.getNode(0) && this._storage.getNode(0)._val;
   }
 
   isEmpty() {
