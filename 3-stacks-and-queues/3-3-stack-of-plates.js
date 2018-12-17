@@ -21,8 +21,6 @@ class SetOfStacks {
   }
 
   push(v) {
-    console.log("this.max ", this._max);
-    console.log("this._stack.peek() ", this._stack.peek());
     if (this._stack.peek()._count >= this._max) {
       this._stack.push(new Stack());
       this._stack.peek().push(v);
