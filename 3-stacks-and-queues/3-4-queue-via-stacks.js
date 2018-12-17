@@ -27,6 +27,14 @@ class QueueViaStacks {
   isEmpty() {
     return this._stack1._count === 0 && this._stack2._count === 0;
   }
+
+  peek() {
+    if (this._stack2._count > 0) {
+      this._stack2.peek();
+    } else {
+      this._stack1.peek();
+    }
+  }
 }
 
 module.exports = QueueViaStacks;
