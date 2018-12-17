@@ -1,8 +1,5 @@
 const Stack = require("../stack");
-
-function stackValues(stack) {
-  return Object.keys(stack._storage).map(k => stack._storage[k]);
-}
+const listValues = require("../../2-linked-lists/list-values");
 
 describe("Stack", () => {
   test("adds values correctly", () => {
@@ -10,7 +7,7 @@ describe("Stack", () => {
     stack.push(1);
     stack.push(2);
     stack.push(3);
-    const result = stackValues(stack);
+    const result = listValues(stack._storage);
 
     const expected = [1, 2, 3];
     expect(result).toEqual(expected);
@@ -25,9 +22,25 @@ describe("Stack", () => {
     stack.pop();
     stack.pop();
 
-    const result = stackValues(stack);
+    const result = listValues(stack._storage);
 
     const expected = [1];
+    expect(result).toEqual(expected);
+  });
+
+  test("removes all values correctly", () => {
+    let stack = new Stack();
+    stack.push(1);
+    stack.push(2);
+    stack.push(3);
+
+    stack.pop();
+    stack.pop();
+    stack.pop();
+
+    const result = listValues(stack._storage);
+
+    const expected = [];
     expect(result).toEqual(expected);
   });
 
@@ -37,7 +50,7 @@ describe("Stack", () => {
     stack.push(2);
     stack.push(3);
     stack.push(4);
-    const result = stack._count;
+    const result = stack.getCount();
 
     const expected = 4;
     expect(result).toEqual(expected);
@@ -51,7 +64,7 @@ describe("Stack", () => {
     stack.push(4);
 
     stack.pop();
-    const result = stack._count;
+    const result = stack.getCount();
 
     const expected = 3;
     expect(result).toEqual(expected);
