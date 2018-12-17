@@ -11,8 +11,8 @@ const listValues = require("../2-linked-lists/list-values");
 
 class AnimalShelter {
   constructor() {
-    this._dogs = new Queue(100);
-    this._cats = new Queue(100);
+    this._dogs = new Queue();
+    this._cats = new Queue();
     this._count = 0;
   }
 
