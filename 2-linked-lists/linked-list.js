@@ -46,6 +46,7 @@ class LinkedList {
   deleteAtIdx(i) {
     if (i === 0) {
       this._head = this._head._next;
+      this._length = 0;
       return;
     }
 

@@ -97,4 +97,20 @@ describe("LinkedList", () => {
     const expected = [1, 3, 4];
     expect(result).toEqual(expected);
   });
+
+  test("deleteAtIdx all values", () => {
+    let l = new LinkedList();
+    l.appendToTail(1);
+    l.appendToTail(2);
+    l.appendToTail(3);
+
+    l.deleteAtIdx(1);
+    l.deleteAtIdx(1);
+    l.deleteAtIdx(0);
+
+    const result = listValues(l);
+
+    const expected = [];
+    expect(result).toEqual(expected);
+  });
 });
