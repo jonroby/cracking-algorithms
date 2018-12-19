@@ -1,3 +1,4 @@
 module.exports = {
-  roots: ["<rootDir>"]
+  roots: ["<rootDir>"],
+  testPathIgnorePatterns: ['javascript-algorithms']
 };
