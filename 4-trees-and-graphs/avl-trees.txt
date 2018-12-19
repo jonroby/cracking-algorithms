@@ -1,0 +1,5 @@
+AVL Trees
+
+Georgy Adelson-Velsky Evgenni Landis (AVL)
+
+A tree is balanced if the height is O(lg n)
