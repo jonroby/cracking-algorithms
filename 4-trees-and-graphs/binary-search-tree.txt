@@ -1,0 +1,9 @@
+Binary Search Trees
+
+Why use them?
+
+Consider using a sorted array. You can perform binary search and locate the item in O(log n), however, insertion will take O(n) time.
+
+If a linked list were used, insertion is O(1), but then performing binary search is impossible as linked lists do not provide indices. Even if they did, a single access would still be O(n), and so would fall way short of O(log n).
+
+
